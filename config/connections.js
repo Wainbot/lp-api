@@ -54,7 +54,8 @@ module.exports.connections = {
         user: 'root',
         password: 'root',
         database: 'libertyprim',
-        insecureAuth : true
+        insecureAuth : true,
+        port: 3306
     },
 
     /***************************************************************************
