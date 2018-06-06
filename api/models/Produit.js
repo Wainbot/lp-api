@@ -9,36 +9,99 @@ module.exports = {
 
     attributes: {
         client: {
-            model: 'Client'
+            model: 'client'
         },
         categorie: {
-            model: 'Categorie'
+            model: 'categorie'
         },
         famille: {
-            model: 'Famille'
+            model: 'famille'
         },
         variete: {
-            model: 'Variete'
+            model: 'variete'
         },
         calibre: {
-            model: 'Calibre'
+            model: 'calibre'
         },
         provenance: {
-            model: 'Pays'
+            type: 'string'
         },
         infoJour: {
-            type: 'text',
-            defaultsTo: ''
+            type: 'string'
         },
         actif: {
             type: 'boolean',
-            defaultTo: true
+            defaultsTo: true
         },
         images: {
-            collection: 'Image'
+            collection: 'image',
+            via: 'produit'
         },
-        tarifs: {
-            collection: 'Tarif'
+        expediePays: {
+            type: 'string'
+        },
+        expedieRegion: {
+            type: 'string'
+        },
+        stock: {
+            type: 'integer',
+            defaultsTo: 0
+        },
+        bio: {
+            type: 'boolean',
+            defaultsTo: false
+        },
+        marque: {
+            type: 'string'
+        },
+        transportCharge: {
+            type: 'string'
+        },
+        typeTransport: {
+            type: 'string'
+        },
+        restrictions: {
+            collection: 'restriction',
+            via: 'produit'
+        },
+
+        // AJOUT TARIF
+
+        // kg, vrac, unite
+        lunite: {
+            model: 'unite'
+        },
+        // prix Kg
+        prixKg: {
+            type: 'float'
+        },
+        // prix unité
+        prixUnite: {
+            type: 'float'
+        },
+        // prix colisage
+        prixColisage: {
+            type: 'float'
+        },
+        // poids unité
+        poidsUnite: {
+            type: 'float'
+        },
+        // type de conditionnement pour une unité
+        conditionnement: {
+            model: 'conditionnement'
+        },
+        // nombre d'unite par colisage
+        quantiteUniteColisage: {
+            type: 'integer'
+        },
+        // type de colisage
+        colisage: {
+            model: 'colisage'
+        },
+        // quantité de colisage
+        quantiteColisage: {
+            type: 'integer'
         }
     }
 };

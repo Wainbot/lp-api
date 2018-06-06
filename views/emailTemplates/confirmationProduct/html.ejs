@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Confirmation d'inscription</title>
+        <link rel="stylesheet" href="http://vps526111.ovh.net/bower_components/font-awesome/css/font-awesome.min.css">
+        <style type="text/css">
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+            /* Take care of image borders and formatting */
+
+            img {
+                max-width: 600px;
+                outline: none;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+            }
+
+            a {
+                text-decoration: none;
+                border: 0;
+                outline: none;
+                color: #bbbbbb;
+            }
+
+            a img {
+                border: none;
+            }
+
+            /* General styling */
+
+            td, h1, h2, h3 {
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-weight: 400;
+            }
+
+            td {
+                text-align: center;
+            }
+
+            body {
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-size-adjust: none;
+                width: 100%;
+                height: 100%;
+                color: #37302d;
+                background: #ffffff;
+                font-size: 16px;
+            }
+
+            table {
+                border-collapse: collapse !important;
+            }
+
+            .headline {
+                color: #ffffff;
+                font-size: 36px;
+            }
+
+            .force-full-width {
+                width: 100% !important;
+            }
+
+
+        </style>
+
+        <style type="text/css" media="screen">
+            @media screen {
+                td, h1, h2, h3 {
+                    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+                }
+            }
+        </style>
+
+        <style type="text/css" media="only screen and (max-width: 480px)">
+            /* Mobile styles */
+            @media only screen and (max-width: 480px) {
+
+                table[class="w320"] {
+                    width: 320px !important;
+                }
+
+            }
+        </style>
+    </head>
+    <body class="body" style="padding:0; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none"
+          bgcolor="#ffffff">
+        <table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%">
+            <tr>
+                <td align="center" valign="top" bgcolor="#ffffff" width="100%">
+                    <center>
+                        <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="600" class="w320">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="font-size: 30px; text-align:center;">
+                                                <br>
+                                                <img src="http://vps526111.ovh.net/app/img/logo.png" alt="" width="250">
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="100%"
+                                           bgcolor="#9AB22B">
+                                        <tr>
+                                            <td>
+                                                <br>
+                                                <br>
+                                                <i class="fa fa-cubes" style="font-size: 50pt;"></i>
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="headline" style="color: #f8f9fa;">
+                                                Bonjour&nbsp;<%=prenom%>&nbsp;!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="60%">
+                                                        <tr>
+                                                            <td style="color:#f8f9fa;">
+                                                                <br>
+                                                                Votre produit a bien été créé&nbsp;!
+                                                                <br>
+                                                                <br>
+                                                                Vous pouvez consulter la page de votre produit en cliquant sur le bouton suivant&nbsp;:
+                                                                <br>
+                                                                <br>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>
+                                                    <a href="http://vps526111.ovh.net/#/produit/<%=produit.id%>"
+                                                       style="background-color:#768921;border-radius:4px;color:#f8f9fa;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:16px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:300px;-webkit-text-size-adjust:none;">
+                                                        Consulter la fiche produit</a>
+                                                </div>
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width"
+                                           bgcolor="#24292e" style="margin: 0 auto">
+                                        <tr>
+                                            <td style="background-color:#24292e; color: #9a9a9a;">
+                                                <br>
+                                                <br>
+                                                <a href="http://vps526111.ovh.net/" class="btn btn-link">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                                <span class="social-separator">|</span>
+                                                <a href="http://vps526111.ovh.net/" class="btn btn-link">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </a>
+                                                <span class="social-separator">|</span>
+                                                <a href="http://vps526111.ovh.net/" class="btn btn-link">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <span class="social-separator">|</span>
+                                                <a href="http://vps526111.ovh.net/" class="btn btn-link">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                                <span class="social-separator">|</span>
+                                                <a href="http://vps526111.ovh.net/" class="btn btn-link">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#9a9a9a; font-size:12px;">
+                                                © Libertyprim SAS
+                                                <br/>
+                                                Tous droits réservés 2015-2018
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -19,7 +19,9 @@ module.exports = {
 
     models: {
         connection: 'mysqlServer',
-        migrate: 'drop'
-    }
+        migrate: 'alter'
+    },
+
+    hookTimeout: 900000
 
 };

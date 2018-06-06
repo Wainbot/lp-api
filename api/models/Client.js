@@ -8,16 +8,12 @@
 module.exports = {
 
     attributes: {
-        type: {
-            model: 'TypeClient'
-        },
         societe: {
-            model: 'Societe'
+            model: 'societe'
         },
         pseudo: {
             type: 'string',
-            required: true,
-            unique: true
+            required: true
         },
         nom: {
             type: 'string',
@@ -30,7 +26,7 @@ module.exports = {
             defaultsTo: ''
         },
         email: {
-            type: 'email',
+            type: 'string',
             required: true,
             unique: true
         },
@@ -43,13 +39,8 @@ module.exports = {
             type: 'string',
             required: true
         },
-        adresse: {
-            type: 'string',
-            required: true
-        },
         status: {
             type: 'integer',
-            required: true,
             enum: [0, 1, 2],
             defaultsTo: 0
         }

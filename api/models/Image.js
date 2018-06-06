@@ -9,8 +9,10 @@ module.exports = {
 
     attributes: {
         url: {
-            type: 'string',
-            required: true
+            type: 'text'
+        },
+        produit: {
+            model: 'produit'
         }
     }
 };

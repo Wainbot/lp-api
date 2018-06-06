@@ -7,11 +7,19 @@
 
 module.exports = {
 
-  attributes: {
-      label: {
-          type: 'string',
-          required: true
-      }
-  }
+    attributes: {
+        label: {
+            type: 'string',
+            required: true
+        },
+        regions: {
+            collection: 'region',
+            via: 'pays'
+        },
+        familles: {
+            collection: 'famille',
+            via: 'provenances'
+        }
+    }
 };
 

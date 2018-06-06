@@ -13,7 +13,7 @@ module.exports = {
             required: true
         },
         famille: {
-            model: 'Famille'
+            model: 'famille'
         }
     }
 };

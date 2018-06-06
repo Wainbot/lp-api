@@ -50,12 +50,11 @@ module.exports.connections = {
 
     mysqlServer: {
         adapter: 'sails-mysql',
-        host: 'localhost',
+        host: '127.0.0.1',
         user: 'root',
         password: 'root',
-        database: 'libertyprim',
-        insecureAuth : true
-    },
+        database: 'liberty'
+    }
 
     /***************************************************************************
      *                                                                          *

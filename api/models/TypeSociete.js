@@ -10,8 +10,7 @@ module.exports = {
     attributes: {
         label: {
             type: 'string',
-            required: true,
-            unique: true
+            required: true
         }
     }
 };

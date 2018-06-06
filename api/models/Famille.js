@@ -13,16 +13,29 @@ module.exports = {
             required: true
         },
         groupeFamille: {
-            model: 'GroupeFamille'
+            model: 'groupeFamille'
         },
         saisonDebut: {
-            model: 'Saison'
+            model: 'saison'
         },
         saisonFin: {
-            model: 'Saison'
+            model: 'saison'
         },
         provenances: {
-            collection: 'Pays'
+            collection: 'pays',
+            via: 'familles'
+        },
+        varietes: {
+            collection: 'variete',
+            via: 'famille'
+        },
+        calibres: {
+            collection: 'calibre',
+            via: 'famille'
+        },
+        conditionnements: {
+            collection: 'conditionnement',
+            via: 'familles'
         }
     }
 };

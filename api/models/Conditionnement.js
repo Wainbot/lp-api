@@ -11,6 +11,10 @@ module.exports = {
         label: {
             type: 'string',
             required: true
+        },
+        familles: {
+            collection: 'famille',
+            via: 'conditionnements'
         }
     }
 };

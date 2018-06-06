@@ -1,0 +1,15 @@
+INSERT INTO `groupefamille` (`id`, `label`) VALUES
+(1, 'Fruits'),
+(2, 'Légumes'),
+(3, 'Fruits exotiques'),
+(4, 'Herbes aromatiques'),
+(11, 'Salades'),
+(7, 'Baies'),
+(8, 'Fruits secs'),
+(9, 'Graines et légumineuses'),
+(10, 'Agrumes'),
+(18, 'Quatrième Gamme'),
+(14, 'Légumes racines'),
+(15, 'Légumes anciens'),
+(16, 'Germes de légumes'),
+(17, 'Micro végétaux');

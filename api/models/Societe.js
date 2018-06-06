@@ -7,32 +7,38 @@
 
 module.exports = {
 
-  attributes: {
-      type: {
-          model: 'TypeSociete'
-      },
-      enseigne: {
-          type: 'string',
-          required: true
-      },
-      siret: {
-          type: 'integer',
-          required: true,
-          unique: true
-      },
-      cp: {
-          type: 'integer',
-          required: true,
-          size: 5
-      },
-      ville: {
-          type: 'string',
-          required: true
-      },
-      pays: {
-          type: 'string',
-          required: true
-      }
-  }
+    attributes: {
+        typeSociete: {
+            model: 'typeSociete'
+        },
+        typeClient: {
+            model: 'typeClient'
+        },
+        enseigne: {
+            type: 'string',
+            required: true
+        },
+        siret: {
+            type: 'string',
+            required: true,
+            unique: true
+        },
+        adresse: {
+            type: 'string',
+            required: true
+        },
+        cp: {
+            type: 'string',
+            required: true
+        },
+        ville: {
+            type: 'string',
+            required: true
+        },
+        pays: {
+            type: 'string',
+            required: true
+        }
+    }
 };
 

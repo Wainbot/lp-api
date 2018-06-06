@@ -1,7 +1,7 @@
 /**
- * PaysController
+ * RegionController
  *
- * @description :: Server-side logic for managing pays
+ * @description :: Server-side logic for managing regions
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 

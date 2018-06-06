@@ -7,14 +7,14 @@
 
 module.exports = {
 
-  attributes: {
-      label: {
-          type: 'string',
-          required: true
-      },
-      famille: {
-        model: 'Famille'
-      }
-  }
+    attributes: {
+        label: {
+            type: 'string',
+            required: true
+        },
+        famille: {
+            model: 'famille'
+        }
+    }
 };
 
